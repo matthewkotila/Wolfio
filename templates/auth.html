@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title>Register your number</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="keyword" placeholder = "+18888888888" class = "add number" onkeydown="search(this)">
+	</form>
+
+	<script type="text/javascript">
+		function search(ele) {
+		    if(event.keyCode == 13) {
+		    	window.open("/phonenum/" + ele.value);
+		    }
+		}
+	</script>
+
+</body>
+</html>
+
